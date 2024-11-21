@@ -20,13 +20,24 @@ public class Ejemplo101 {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        int limite_tabla = 12;
+        int limite_tabla;
         int contador = 1;
         int operacion;
         int tabla;
-        
+        //numero negativo = tabla 12
+        //0 = tabla 12
         System.out.println("Ingrese el número de tabla a generar");
         tabla = entrada.nextInt();
+        System.out.println("Ingrese el limite de tabla");
+        limite_tabla = entrada.nextInt();
+        
+        if (limite_tabla >0){
+        limite_tabla = limite_tabla + 0;
+        }else{
+            if (limite_tabla <=0){
+            limite_tabla = 12;
+            }
+        }
         
         String cadena = ""; // cadena acumulador
         cadena = String.format("%sTabla de multiplicar\n", cadena);
