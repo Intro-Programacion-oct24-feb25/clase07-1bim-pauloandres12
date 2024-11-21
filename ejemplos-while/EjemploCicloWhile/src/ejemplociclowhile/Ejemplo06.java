@@ -25,13 +25,15 @@ public class Ejemplo06 {
 
         double suma_total = 0;
         double calificacion;
-        boolean bandera = true;
+        boolean bandera = true; // true y false
 
         System.out.println("Ingrese las notas de los "
                 + "estudiantes de su materia");
         // true 
         // while (bandera) {
-        while(bandera==true){
+        while(bandera==true){ // las dos lineas realizan la misma funcion
+                              // ya que la variable bandera que es un booleano
+                              // ya tiene asignado el valor de true
             System.out.println("Ingrese calificación");
             calificacion = entrada.nextDouble();
 
